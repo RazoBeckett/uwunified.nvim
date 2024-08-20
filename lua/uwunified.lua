@@ -52,6 +52,7 @@ function M.load_colors()
         DiffText = { fg = colors.none, bg = colors.diff.text },
         ErrorMsg = { fg = colors.bg, bg = colors.red },
         WarningMsg = { fg = colors.bg, bg = colors.yellow },
+        StatusLine = { fg = colors.fg, bg = colors.fg_gutter },
         -- Text types
         Constant = { fg = colors.cyan },
         Boolean = { link = "Constant" },
