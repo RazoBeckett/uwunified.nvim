@@ -1,6 +1,6 @@
 local colors = {}
 
-colors.bg = "#0C0C0C"
+colors.bg = "#241b26"
 colors.bg_dark = "#1d221f"
 colors.bg_float = "#1d221f"
 colors.bg_highlight = "#3b3c48"
