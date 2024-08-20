@@ -33,7 +33,7 @@ function M.load_colors()
     local syntax = {
         -- UI Elements
         LineNr = { fg = colors.blue1 },
-        CursorLineNr = { fg = colors.blue },
+        CursorLineNr = { fg = colors.rainbow[6] },
         Visual = { fg = colors.none, bg = colors.bg_visual },
         WinSeparator = { fg = colors.border, bg = colors.none },
         SignColumn = { fg = colors.fg_gutter },
