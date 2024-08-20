@@ -59,5 +59,6 @@ colors.terminal_black = "#1d221f"
 colors.todo = "#eed5d9"
 colors.warning = "#e39755"
 colors.yellow = "#e39755"
+colors.cursorline = "#262626"
 
 return colors

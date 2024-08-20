@@ -40,7 +40,7 @@ function M.load_colors()
         ColorColumn = { bg = colors.bg_highlight },
         CursorColumn = { bg = colors.bg_highlight },
         PmenuSel = { bg = colors.bg_search },
-        CursorLine = { bg = colors.bg_highlight },
+        CursorLine = { bg = colors.cursorline },
         Cursor = { fg = colors.bg, bg = colors.fg },
         IncSearch = { fg = colors.bg, bg = colors.orange },
         MatchParen = { fg = colors.fg, bg = colors.bg_visual, gui = styles.underline },
