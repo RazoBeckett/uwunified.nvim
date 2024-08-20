@@ -1,0 +1,63 @@
+local colors = {}
+
+colors.bg = "#0C0C0C"
+colors.bg_dark = "#1d221f"
+colors.bg_float = "#1d221f"
+colors.bg_highlight = "#3b3c48"
+colors.bg_popup = "#1d221f"
+colors.bg_search = "#4d688b"
+colors.bg_sidebar = "#1d221f"
+colors.bg_statusline = "#1d221f"
+colors.bg_visual = "#3b3c48"
+colors.black = "#1a1d1f"
+colors.blue = "#6a9eb5"
+colors.blue0 = "#4c6175"
+colors.blue1 = "#557b98"
+colors.blue2 = "#92b4c8"
+colors.blue5 = "#c1d9df"
+colors.blue6 = "#d9e6ea"
+colors.blue7 = "#f1f6f7"
+colors.border = "#2f2a3f"
+colors.border_highlight = "#de5b44"
+colors.comment = "#6c3c62"
+colors.cyan = "#9c5fce"
+colors.dark3 = "#2b3034"
+colors.dark5 = "#433c4e"
+colors.diff = {
+    add = "#3f2d40",
+    change = "#2f3c4b",
+    delete = "#491f26",
+    text = "#4c6175",
+}
+colors.error = "#de5b44"
+colors.fg = "#eed5d9"
+colors.fg_dark = "#c7b0b3"
+colors.fg_float = "#eed5d9"
+colors.fg_gutter = "#46354a"
+colors.fg_sidebar = "#d9c2c6"
+colors.git = {
+    add = "#c965bf",
+    change = "#6a9eb5",
+    delete = "#de5b44",
+    ignore = "#6c3c62",
+}
+colors.green = "#6ac38f"
+colors.green1 = "#539f7b"
+colors.green2 = "#83c9aa"
+colors.hint = "#a3ab5a"
+colors.info = "#e39755"
+colors.magenta = "#a84a73"
+colors.magenta2 = "#7b3156"
+colors.none = "NONE"
+colors.orange = "#e39755"
+colors.purple = "#9c5fce"
+colors.rainbow = { "#6a9eb5", "#e39755", "#c965bf", "#a3ab5a", "#a84a73", "#9c5fce" }
+colors.red = "#de5b44"
+colors.red1 = "#9b3e2e"
+colors.teal = "#6ac38f"
+colors.terminal_black = "#1d221f"
+colors.todo = "#eed5d9"
+colors.warning = "#e39755"
+colors.yellow = "#e39755"
+
+return colors
