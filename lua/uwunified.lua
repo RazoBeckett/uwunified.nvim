@@ -33,6 +33,7 @@ function M.load_colors()
     local syntax = {
         -- UI Elements
         LineNr = { fg = colors.blue1 },
+        CursorLine = { bg = colors.cursorline },
         CursorLineNr = { fg = colors.rainbow[6] },
         Visual = { fg = colors.none, bg = colors.bg_visual },
         WinSeparator = { fg = colors.border, bg = colors.none },
@@ -40,7 +41,6 @@ function M.load_colors()
         ColorColumn = { bg = colors.bg_highlight },
         CursorColumn = { bg = colors.bg_highlight },
         PmenuSel = { bg = colors.bg_search },
-        CursorLine = { bg = colors.cursorline },
         Cursor = { fg = colors.bg, bg = colors.fg },
         IncSearch = { fg = colors.bg, bg = colors.orange },
         MatchParen = { fg = colors.fg, bg = colors.bg_visual, gui = styles.underline },
@@ -61,7 +61,7 @@ function M.load_colors()
         Number = { link = "Constant" },
         String = { fg = colors.green1 },
         Function = { fg = colors.blue },
-        Comment = { fg = colors.comment, gui = styles.italic },
+        Comment = { fg = colors.white3, gui = styles.italic },
         NonText = { fg = colors.dark3 },
         Normal = { fg = colors.fg, bg = colors.bg },
         Conditional = { fg = colors.blue, gui = styles.bold },
@@ -98,7 +98,9 @@ function M.load_colors()
         DiagnosticVirtualTextHint = { fg = colors.cyan },
         DiagnosticVirtualTextInfo = { fg = colors.blue },
         DiagnosticVirtualTextWarn = { fg = colors.yellow },
+
         -- Plugin Support
+        -- Git Gutter
         GitGutterAdd = { fg = colors.git.add },
         GitGutterChange = { fg = colors.git.change },
         GitGutterDelete = { fg = colors.git.delete },
@@ -113,9 +115,31 @@ function M.load_colors()
         GitSignsAdd = { link = "GitGutterAdd" },
         GitSignsChange = { link = "GitGutterChange" },
         GitSignsDelete = { link = "GitGutterDelete" },
-        -- Treesitter support
-        ["@variable"] = { fg = colors.fg_dark },
-        ["@attribute.zig"] = { fg = colors.blue2, gui = styles.bold },
+
+        -- Treesitter syntax highlights
+        ["@variable"] = { fg = colors.fg_dark, gui = styles.none },
+
+        ["@attribute.zig"] = { fg = colors.blue },
+        ["@type.qualifier"] = { fg = colors.blue1 },
+        ["@keyword"] = { link = "Keyword" },
+        ["@keyword.return"] = { link = "Keyword", gui = styles.italic },
+        ["@keyword.repeat"] = { link = "Keyword" },
+        ["@keyword.conditional"] = { link = "Keyword" },
+        ["@keyword.exception.zig"] = { link = "Operator" },
+        ["@keyword.Function"] = { gui = styles.italic },
+        ["@lsp.type.comment.documentation"] = { fg = colors.fg_gutter },
+        ["@punctuation"] = { link = "Special" },
+
+        -- Semantic highlights
+        ["@lsp.type.operator.zig"] = { link = "Operator" },
+        ["@lsp.type.namespace"] = { fg = colors.blue2 },
+        ["@lsp.type.property"] = { fg = colors.white2 },
+        ["@lsp.type.parameter"] = { fg = colors.green2 },
+        ["@lsp.type.variable"] = { fg = colors.blue2, gui = styles.none },
+        ["@lsp.type.label"] = { fg = colors.fg_sidebar },
+        -- ["@lsp.mod.declaration"] = { gui = styles.italic },
+        -- ["@function.call"] = { gui = styles.italic },
+        ["@lsp.type.errorTag"] = { link = "Type", gui = styles.bold }
     }
 
     for group, style in pairs(syntax) do

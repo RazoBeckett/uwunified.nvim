@@ -19,7 +19,7 @@ colors.blue6 = "#d9e6ea"
 colors.blue7 = "#f1f6f7"
 colors.border = "#2f2a3f"
 colors.border_highlight = "#de5b44"
-colors.comment = "#6c3c62"
+colors.comment = "#636da6"
 colors.cyan = "#9c5fce"
 colors.dark3 = "#c7b0b3"
 colors.dark5 = "#433c4e"
@@ -59,6 +59,10 @@ colors.terminal_black = "#1d221f"
 colors.todo = "#eed5d9"
 colors.warning = "#e39755"
 colors.yellow = "#e39755"
-colors.cursorline = "#262626"
+colors.white1 = "#ede3e2";
+colors.white2 = "#9ba1b9";
+colors.white3 = "#80767e";
+colors.white4 = "#6c656c";
+colors.cursorline = "#2f334d"
 
 return colors
