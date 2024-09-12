@@ -126,7 +126,7 @@ function M.load_colors()
         ["@keyword.repeat"] = { link = "Keyword" },
         ["@keyword.conditional"] = { link = "Keyword" },
         ["@keyword.exception.zig"] = { link = "Operator" },
-        ["@keyword.Function"] = { gui = styles.italic },
+        -- ["@keyword.Function"] = { gui = styles.italic },
         ["@lsp.type.comment.documentation"] = { fg = colors.fg_gutter },
         ["@punctuation"] = { link = "Special" },
 
